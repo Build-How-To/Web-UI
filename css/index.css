@@ -162,7 +162,7 @@ nav .navlinks a {
   color: black;
 }
 nav .navlinks a:hover {
-  color: blue;
+  color: grey;
 }
 nav .navlinks a .signup-button {
   padding: 15px 30px 15px 30px;
