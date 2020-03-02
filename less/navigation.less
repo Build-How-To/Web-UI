@@ -1,0 +1,46 @@
+nav {
+    width: 100%;
+    background-color: @navbg-color;
+    display: flex;
+    justify-content: space-around;
+    border-bottom:1px solid lightgrey;
+    .logo {
+        width: 200px;
+        padding: 10px;
+        &:hover{
+            cursor: pointer;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    .navlinks {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;   
+        a {
+            font-family: @navfont-family;
+            font-size: 2rem;
+            text-decoration: none;
+            color: @navfont-color;
+            &:hover{
+                color: blue;
+            }
+            .signup-button {
+                padding: 15px 30px 15px 30px;
+                background-color: @buttonbg-color;
+                border-radius: 90px;
+                border:2px solid @buttonbg-color;
+                color: @navfont-color;
+                &:hover{
+                    box-sizing: border-box;
+                    background-color: white;
+                    color:@navfont-color;
+                }
+            }
+        }
+
+    }
+}
