@@ -133,14 +133,15 @@ div {
 }
 nav {
   width: 100%;
-  background-color: white;
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
-  justify-content: space-around;
-  border-bottom: 1px solid lightgrey;
+  justify-content: space-between;
+  position: fixed;
 }
 nav .logo {
-  width: 200px;
+  width: 350px;
   padding: 10px;
+  padding-left: 100px;
 }
 nav .logo:hover {
   cursor: pointer;
@@ -148,48 +149,65 @@ nav .logo:hover {
 nav .logo img {
   width: 100%;
 }
-nav .navlinks {
-  width: 30%;
+.navlinks {
+  width: 45%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  padding-right: 100px;
 }
-nav .navlinks a {
+.navlinks a {
   font-family: 'Montserrat';
   font-size: 2rem;
   text-decoration: none;
-  color: black;
+  color: white;
 }
-nav .navlinks a:hover {
-  color: grey;
+.navlinks a:hover {
+  color: lightgrey;
 }
-nav .navlinks a .signup-button {
+.navlinks a .signup-button {
   padding: 15px 30px 15px 30px;
-  background-color: #b6d6fb;
+  background-color: #358df5;
   border-radius: 90px;
-  border: 2px solid #b6d6fb;
-  color: black;
+  border: 2px solid #358df5;
+  color: white;
+  font-size: 2rem;
+  transition: color 0.03 linears;
 }
-nav .navlinks a .signup-button:hover {
-  box-sizing: border-box;
-  background-color: white;
-  color: black;
+.navlinks a .signup-button:hover {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
 }
 html {
   font-size: 62.5%;
+  background-image: url(../img/crafts-img.jpg);
+  background-size: cover;
+  background-position: center;
+  background-color: #000000;
 }
 html .container {
   margin: 0 auto;
   max-width: 1350px;
+  padding-top: 100px;
   height: 100%;
 }
 html .container p {
   padding-bottom: 10px;
+  padding-top: 10px;
   font-size: 2rem;
+  font-family: 'Montserrat';
+  color: white;
+}
+html .img-banner {
+  position: fixed;
+  width: 100%;
+}
+html .img-banner img {
+  width: 100%;
 }
 footer {
-  background-color: #76b2f8;
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   font-size: 2rem;
   text-align: center;
