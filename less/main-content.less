@@ -3,19 +3,71 @@ html{
     background-image: url(../img/crafts-img.jpg);
     background-size: cover;
     background-position: center;
-    background-color: rgba(0,0,0,1);
+    h1, h2, h3, p{
+        color:@Headerfont-color;
+        font-family: @font-family;
+    }
+    h1 {
+        font-size: 8rem;
+    }
+    h2 {
+        font-size: 5rem;
+    }
+    h3 {
+        font-size: 3rem;
+    }
     .container {
         margin: 0 auto;
         max-width: 1350px;
         height: 100%;
         padding-top: 100px;
         height: 100%;
-        p{
+        p {
             padding-bottom: 10px;
             padding-top: 10px;
             font-size: 2rem;
-            font-family: @navfont-family;
-            color: @navfont-color;
+        }
+        .bio {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            width: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            height: 100%;
+            h1{
+                text-align: center;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                border-bottom:4px solid ;
+            }
+            .dev-box{
+                background-color: @footerbg-color;
+                padding: 20px;
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                margin-top: 20px;
+                .profile-img-container{
+                    width: 25%;
+                    border:8px solid #76b2f8;
+                    padding: 16px;
+                    img {
+                        width: 100%;
+                    }
+                }
+                .info-text {
+                    width: 75%;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px;
+                    h3, p{
+                        padding-top: 20px;
+                        padding-bottom: 20px;
+                    }
+                }
+            }
         }
     }
     .img-banner {

@@ -8,6 +8,17 @@ nav {
         width: 350px;
         padding: 10px;
         padding-left: 100px;
+        .img-logo-condensed{
+            display: none;
+        }
+        @media @mobile{
+            .img-logo-fullsize{
+                display: none;
+            }
+            .img-logo-condensed{
+                display: flex;
+            }
+        }
         &:hover{
             cursor: pointer;
         }
@@ -28,6 +39,7 @@ nav {
         font-size: 2rem;
         text-decoration: none;
         color: @navfont-color;
+        transition:all 50ms linear;
         &:hover{
             color: @hover-color;
         }
@@ -38,9 +50,11 @@ nav {
             border:2px solid @buttonbg-color;
             color: @navfont-color;
             font-size: 2rem;
-            transition:color 0.03 linears;
+            transition:all 50ms linear;
             &:hover{
                 background-color: rgba(0,0,0,0);
+                border:2px solid #d7e8fd;
+                box-shadow: 0 0 15px #d7e8fd;
                 color:@navfont-color;
             }
         }
