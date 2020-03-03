@@ -152,6 +152,7 @@ nav .logo .img-logo-condensed {
   }
   nav .logo .img-logo-condensed {
     display: flex;
+    width: 100%;
   }
 }
 nav .logo:hover {
@@ -159,6 +160,12 @@ nav .logo:hover {
 }
 nav .logo img {
   width: 100%;
+}
+@media (max-width: 500px) {
+  nav .logo {
+    padding: 10px;
+    width: 100px;
+  }
 }
 .navlinks {
   width: 45%;
@@ -193,6 +200,12 @@ nav .logo img {
   box-shadow: 0 0 15px #d7e8fd;
   color: white;
 }
+@media (max-width: 500px) {
+  .navlinks {
+    width: 80%;
+    padding-right: 25px;
+  }
+}
 html {
   font-size: 62.5%;
   background-image: url(../img/crafts-img.jpg);
@@ -211,9 +224,21 @@ html h1 {
 }
 html h2 {
   font-size: 5rem;
+  font-weight: bold;
 }
 html h3 {
   font-size: 3rem;
+}
+@media (max-width: 500px) {
+  html h1 {
+    font-size: 5rem;
+  }
+  html h2 {
+    font-size: 4rem;
+  }
+  html h3 {
+    font-size: 2rem;
+  }
 }
 html .container {
   margin: 0 auto;
@@ -258,6 +283,18 @@ html .container .bio .dev-box .profile-img-container {
 html .container .bio .dev-box .profile-img-container img {
   width: 100%;
 }
+@media (max-width: 500px) {
+  html .container .bio .dev-box .profile-img-container {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  html .container .bio .dev-box {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
 html .container .bio .dev-box .info-text {
   width: 75%;
   display: flex;
@@ -268,6 +305,24 @@ html .container .bio .dev-box .info-text h3,
 html .container .bio .dev-box .info-text p {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+@media (max-width: 500px) {
+  html .container .bio .dev-box .info-text h3,
+  html .container .bio .dev-box .info-text p {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 500px) {
+  html .container .bio .dev-box .info-text {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  html .container .bio .dev-box {
+    flex-direction: column;
+  }
 }
 html .img-banner {
   position: fixed;
