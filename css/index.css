@@ -130,6 +130,7 @@ html,
 body,
 div {
   box-sizing: border-box;
+  font-size: 62.5%;
 }
 nav {
   width: 100%;
@@ -210,7 +211,7 @@ html {
   font-size: 62.5%;
   background-image: url(../img/crafts-img.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 html h1,
 html h2,
@@ -223,11 +224,11 @@ html h1 {
   font-size: 8rem;
 }
 html h2 {
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: bold;
 }
 html h3 {
-  font-size: 3rem;
+  font-size: 3.5rem;
 }
 @media (max-width: 500px) {
   html h1 {
@@ -249,7 +250,117 @@ html .container {
 html .container p {
   padding-bottom: 10px;
   padding-top: 10px;
+  font-size: 3rem;
+}
+@media (max-width: 500px) {
+  html .container p {
+    font-size: 2rem;
+  }
+}
+html .container .introduction {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+@media (max-width: 500px) {
+  html .container .introduction {
+    padding: 25px;
+  }
+}
+html .container .introduction .container-intro {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 50px;
+  border: 10px solid #76b2f8;
+}
+html .container .introduction .container-intro h1,
+html .container .introduction .container-intro h2,
+html .container .introduction .container-intro h3,
+html .container .introduction .container-intro .catcher-info {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media (max-width: 500px) {
+  html .container .introduction .container-intro h1,
+  html .container .introduction .container-intro h2,
+  html .container .introduction .container-intro h3,
+  html .container .introduction .container-intro .catcher-info {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+@media (max-width: 500px) {
+  html .container .introduction .container-intro {
+    padding: 20px;
+  }
+}
+html .container .introduction .container-intro .catcher-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 5px solid #76b2f8;
+  padding-top: 50px;
+}
+@media (max-width: 500px) {
+  html .container .introduction .container-intro .catcher-info {
+    padding-top: 20px;
+    flex-direction: column-reverse;
+  }
+}
+html .container .introduction .container-intro .catcher-info .para-wrap {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  line-height: 40px;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  html .container .introduction .container-intro .catcher-info .para-wrap {
+    width: 100%;
+    line-height: normal;
+  }
+}
+html .container .introduction .container-intro .catcher-info .para-wrap a {
+  font-family: 'Montserrat';
   font-size: 2rem;
+  text-decoration: none;
+  color: white;
+  transition: all 50ms linear;
+}
+html .container .introduction .container-intro .catcher-info .para-wrap a:hover {
+  color: lightgrey;
+}
+html .container .introduction .container-intro .catcher-info .para-wrap a .signup-button {
+  padding: 15px 30px 15px 30px;
+  background-color: #358df5;
+  border-radius: 90px;
+  border: 2px solid #358df5;
+  color: white;
+  font-size: 2rem;
+  transition: all 50ms linear;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+html .container .introduction .container-intro .catcher-info .para-wrap a .signup-button:hover {
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #d7e8fd;
+  box-shadow: 0 0 15px #d7e8fd;
+  color: white;
+}
+html .container .introduction .container-intro .catcher-info .img-container {
+  width: 38%;
+  border: 10px solid white;
+  padding: 20px;
+}
+@media (max-width: 500px) {
+  html .container .introduction .container-intro .catcher-info .img-container {
+    width: 100%;
+    border: 5px solid white;
+    padding: 0px;
+  }
+}
+html .container .introduction .container-intro .catcher-info .img-container img {
+  width: 100%;
 }
 html .container .bio {
   display: flex;

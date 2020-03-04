@@ -2,32 +2,32 @@ html{
     font-size: 62.5%;
     background-image: url(../img/crafts-img.jpg);
     background-size: cover;
-    background-position: center;
+    background-position:top;
     h1, h2, h3, p{
         color:@Headerfont-color;
         font-family: @font-family;
     }
     h1 {
-        font-size: 8rem;
+        font-size: @h1size;
     }
 
     h2 {
-        font-size: 5rem;
+        font-size: @h2size;
         font-weight: bold;
     }
 
     h3 {
-        font-size: 3rem;
+        font-size: @h3size;
     }
     @media @mobile{
         h1{
-            font-size: 5rem; 
+            font-size: @h1msize; 
         }
         h2{
-            font-size: 4rem;
+            font-size: @h2msize;
         }
         h3{
-            font-size: 2rem;
+            font-size: @h3msize;
         }
     }
     .container {
@@ -39,8 +39,100 @@ html{
         p {
             padding-bottom: 10px;
             padding-top: 10px;
-            font-size: 2rem;
+            font-size: @psize;
+            @media @mobile{
+                font-size: @pmsize;
+            }
         }
+//home page
+        .introduction{
+            display: flex;
+            justify-content: center;
+            padding: 50px;
+            @media @mobile{
+                padding: 25px;
+            }
+            .container-intro{
+                background-color: @cardbg-color;
+                padding: 50px;
+                border:10px solid @border-color;
+                h1, h2, h3, .catcher-info{
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    @media @mobile{
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                    }
+                }
+                @media @mobile{
+                    padding: 20px;
+                }
+                .catcher-info{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    border-top:5px solid @border-color;
+                    padding-top: 50px;
+                    @media @mobile{
+                        padding-top: 20px;
+                        flex-direction: column-reverse;
+                    }
+                    .para-wrap{
+                        width: 55%;
+                        display: flex;
+                        flex-direction: column;
+                        line-height: 40px;
+                        justify-content: space-between;
+                        @media @mobile{
+                            width: 100%;
+                            line-height: normal;
+                        }
+                        a {
+                            font-family: @navfont-family;
+                            font-size: 2rem;
+                            text-decoration: none;
+                            color: @navfont-color;
+                            transition:all 50ms linear;
+                            &:hover{
+                                color: @hover-color;
+                            }
+                            .signup-button {
+                                padding: 15px 30px 15px 30px;
+                                background-color: @buttonbg-color;
+                                border-radius: 90px;
+                                border:2px solid @buttonbg-color;
+                                color: @navfont-color;
+                                font-size: 2rem;
+                                transition:all 50ms linear;
+                                width: 50%;
+                                text-align: center;
+                                margin:0 auto;
+                                &:hover{
+                                    background-color: rgba(0,0,0,0);
+                                    border:2px solid #d7e8fd;
+                                    box-shadow: 0 0 15px #d7e8fd;
+                                    color:@navfont-color;
+                                }
+                            }
+                        }
+                    }
+                    .img-container{
+                        width: 38%;
+                        border:10px solid white;
+                        padding: 20px;
+                        @media @mobile{
+                            width: 100%;
+                            border: 5px solid white;
+                            padding: 0px;
+                        }
+                        img{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+//about page
         .bio {
             display: flex;
             justify-content: space-between;
@@ -65,7 +157,7 @@ html{
                 margin-top: 20px;
                 .profile-img-container{
                     width: 25%;
-                    border:8px solid #76b2f8;
+                    border:8px solid @border-color;
                     padding: 16px;
                     img {
                         width: 100%;
