@@ -463,6 +463,7 @@ html .container .explore-info-content .info-content .text-container h2 {
   font-size: 4rem;
   text-align: center;
   color: #96c4fa;
+  line-height: 40px;
 }
 @media (max-width: 500px) {
   html .container .explore-info-content .info-content .text-container h2 {
