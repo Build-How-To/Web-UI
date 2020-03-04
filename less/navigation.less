@@ -1,76 +1,81 @@
 nav {
     width: 100%;
     background-color: @navbg-color;
-    display: flex;
-    justify-content: space-between;
     position: fixed;
-    .logo {
-        width: 350px;
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin:0 auto;
+      .logo {
+        width: 250px;
         padding: 10px;
-        padding-left: 100px;
-        .img-logo-condensed{
+        // padding-left: 100px;
+        .img-logo-condensed {
+          display: none;
+        }
+        @media @mobile, @tablet {
+          .img-logo-fullsize {
             display: none;
+          }
+          .img-logo-condensed {
+            display: flex;
+            width: 100%;
+          }
         }
-        @media @mobile{
-            .img-logo-fullsize{
-                display: none;
-            }
-            .img-logo-condensed{
-                display: flex;
-                width: 100%;
-            }
-        }
-        &:hover{
-            cursor: pointer;
+        &:hover {
+          cursor: pointer;
         }
         img {
-            width: 100%;
+          width: 100%;
         }
-    }
-    @media @mobile{
-        .logo{
-            padding: 10px;
-            width: 100px;
+      }
+      @media @mobile, @tablet {
+        .logo {
+          padding: 10px;
+          width: 100px;
         }
-    }
-} 
-.navlinks {
-    width: 45%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    padding-right: 100px;   
-    a {
-        font-family: @navfont-family;
-        font-size: 2rem;
-        text-decoration: none;
-        color: @navfont-color;
-        transition:all 50ms linear;
-        &:hover{
+      }
+  
+      .navlinks {
+        width: 45%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        // padding-right: 100px;
+        a {
+          font-family: @navfont-family;
+          font-size: 2rem;
+          text-decoration: none;
+          color: @navfont-color;
+          transition: all 50ms linear;
+          &:hover {
             color: @hover-color;
-        }
-        .signup-button {
+          }
+          .signup-button {
             padding: 15px 30px 15px 30px;
             background-color: @buttonbg-color;
             border-radius: 90px;
-            border:2px solid @buttonbg-color;
+            border: 2px solid @buttonbg-color;
             color: @navfont-color;
             font-size: 2rem;
-            transition:all 50ms linear;
-            &:hover{
-                background-color: rgba(0,0,0,0);
-                border:2px solid #d7e8fd;
-                box-shadow: 0 0 15px #d7e8fd;
-                color:@navfont-color;
+            transition: all 50ms linear;
+            &:hover {
+              background-color: rgba(0, 0, 0, 0);
+              border: 2px solid #d7e8fd;
+              box-shadow: 0 0 15px #d7e8fd;
+              color: @navfont-color;
             }
+          }
         }
+      }
+      @media @mobile, @tablet {
+        .navlinks {
+          width: 80%;
+          padding-right: 25px;
+        }
+      }
     }
 }
-
-@media @mobile{
-    .navlinks {
-        width: 80%;
-        padding-right: 25px;
-    }
-}
+  

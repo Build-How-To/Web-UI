@@ -19,7 +19,7 @@ html{
     h3 {
         font-size: @h3size;
     }
-    @media @mobile{
+    @media @mobile, @tablet{
         h1{
             font-size: @h1msize; 
         }
@@ -36,11 +36,17 @@ html{
         height: 100%;
         padding-top: 100px;
         height: 100%;
+        @media @mobile, @tablet{
+            max-width: 100%;
+        }
         p {
             padding-bottom: 10px;
             padding-top: 10px;
             font-size: @psize;
-            @media @mobile{
+            @media @mobile, @tablet{
+                font-size: @pmsize;
+            }
+            @media (max-width:1165px){
                 font-size: @pmsize;
             }
         }
@@ -49,13 +55,12 @@ html{
             display: flex;
             justify-content: center;
             padding: 50px;
-            @media @mobile{
+            @media @mobile, @tablet{
                 padding: 25px;
             }
             .container-intro{
                 background-color: @cardbg-color;
                 padding: 50px;
-                border:10px solid @border-color;
                 h1, h2, h3, .catcher-info{
                     padding-top: 20px;
                     padding-bottom: 20px;
@@ -64,7 +69,7 @@ html{
                         padding-bottom: 10px;
                     }
                 }
-                @media @mobile{
+                @media @mobile, @tablet{
                     padding: 20px;
                 }
                 .catcher-info{
@@ -73,6 +78,10 @@ html{
                     justify-content: space-between;
                     border-top:5px solid @border-color;
                     padding-top: 50px;
+                    @media @tablet{
+                        padding-top: 20px;
+                        flex-direction: column;
+                    }
                     @media @mobile{
                         padding-top: 20px;
                         flex-direction: column-reverse;
@@ -83,7 +92,14 @@ html{
                         flex-direction: column;
                         line-height: 40px;
                         justify-content: space-between;
-                        @media @mobile{
+                        @media @tablet{
+                            padding-bottom: 20px;
+                        }
+                        @media @desktop{
+                            width: 95%;
+                            line-height: normal;
+                        }
+                        @media @mobile, @tablet{
                             width: 100%;
                             line-height: normal;
                         }
@@ -107,6 +123,9 @@ html{
                                 width: 50%;
                                 text-align: center;
                                 margin:0 auto;
+                                @media (max-width:850px){
+                                    padding: 7.5px 15px 7.5px 15px;
+                                }
                                 &:hover{
                                     background-color: rgba(0,0,0,0);
                                     border:2px solid #d7e8fd;
@@ -120,7 +139,16 @@ html{
                         width: 38%;
                         border:10px solid white;
                         padding: 20px;
-                        @media @mobile{
+                        @media (max-width:1290px){
+                            width: 45%;
+                        }
+                        @media (max-width:1220px){
+                            width: 50%;
+                        }
+                        @media @desktop{
+                            width: 95%;
+                        }
+                        @media @mobile, @tablet{
                             width: 100%;
                             border: 5px solid white;
                             padding: 0px;
@@ -137,16 +165,23 @@ html{
             display: flex;
             justify-content: space-between;
             flex-direction: column;
-            flex-wrap: nowrap;
             width: 100%;
             padding-top: 20px;
             padding-bottom: 20px;
             height: 100%;
+            @media @mobile, @tablet, (max-width:960px){
+                align-items: center;
+                width: 100%;
+            }
             h1{
                 text-align: center;
                 padding-top: 20px;
                 padding-bottom: 20px;
-                border-bottom:4px solid ;
+                border-bottom:4px solid;
+                width: 100%;
+                @media @mobile, @tablet, (max-width:960px){
+                    width: 90%;
+                }
             }
             .dev-box{
                 background-color: @footerbg-color;
@@ -155,6 +190,12 @@ html{
                 justify-content: space-between;
                 width: 100%;
                 margin-top: 20px;
+                @media @mobile, @tablet, (max-width:960px){
+                    flex-direction: column;
+                    width: 90%;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
                 .profile-img-container{
                     width: 25%;
                     border:8px solid @border-color;
@@ -162,35 +203,35 @@ html{
                     img {
                         width: 100%;
                     }
-                    @media @mobile {
+                    @media @mobile, @tablet, (max-width:960px){
                         width: 100%;
                     }
-                }
-                @media @mobile {
-                    width: 100%;
-                    margin-top: 20px;
-                    margin-bottom: 20px;
                 }
                 .info-text {
                     width: 75%;
                     display: flex;
                     flex-direction: column;
                     padding: 20px;
+                    h2{
+                        @media @desktop{
+                            font-size: @h2msize;
+                        }
+                    }
                     h3, p{
                         padding-top: 20px;
                         padding-bottom: 20px;
-                        @media @mobile {
+                        @media (max-width: 1270px){
+                            font-size: @pmsize;
+                        }
+                        @media @mobile, @tablet, (max-width:960px){
                             width: 100%;
                             padding-top: 10px;
                             padding-bottom: 10px;
                         }
                     }
-                    @media @mobile {
+                    @media @mobile, @tablet, (max-width:960px){
                         width: 100%;    
                     }
-                }
-                @media @mobile{
-                    flex-direction: column;
                 }
             }
         }
