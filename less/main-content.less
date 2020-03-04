@@ -57,6 +57,7 @@ html{
             }
         }
 //home page
+    //intro signup block
         .introduction{
             display: flex;
             justify-content: center;
@@ -69,10 +70,9 @@ html{
                 padding: 50px;
                 h1, h2, h3, .catcher-info{
                     padding-top: 20px;
-                    padding-bottom: 20px;
+                    padding-bottom: 10px;
                     @media @mobile{
                         padding-top: 10px;
-                        padding-bottom: 10px;
                     }
                 }
                 h2{
@@ -170,6 +170,60 @@ html{
                 }
             }
         }
+    //info blocks
+        .explore-info-content{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 40px;
+            @media @mobile, @tablet, (max-width:980px){
+                flex-direction: column;
+            }
+            .info-content{
+                background-color: @cardbg-color;
+                width: 32%;
+                padding: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                @media @mobile, @tablet, (max-width:980px){
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+                .text-container{
+                    h2{
+                        border-bottom:4px solid @border-color;
+                        padding: 10px;
+                        padding-bottom: 20px;
+                        font-size: @h1msize;
+                        text-align: center;
+                        color: @headerfont-color;
+                        @media @mobile{
+                            font-size: @h2msize;
+                        }
+                    }
+                    p{
+                        font-size: @h3msize;
+                        @media @mobile{
+                            font-size: @pmsize;
+                        }
+                    }
+                    line-height: 32px;
+                    padding-bottom: 20px;
+                    @media @mobile{
+                        line-height: 20px;
+                        padding-bottom: 10px;
+                    }
+                }
+                .img-container{
+                    width: 100%;
+                    padding: 16px;
+                    border:10px solid white;
+                    img{
+                        width: 100%;  
+                    }
+                }
+            }
+        }
 //about page
         .bio {
             display: flex;
@@ -246,6 +300,7 @@ html{
                 }
             }
         }
+
     }
     .img-banner {
         position: fixed;
