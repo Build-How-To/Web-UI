@@ -243,12 +243,12 @@ html h2 {
 html h3 {
   font-size: 3.5rem;
 }
-@media (max-width: 500px), (max-width: 800px) {
+@media (max-width: 500px) {
   html h1 {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   html h2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   html h3 {
     font-size: 2rem;
@@ -485,7 +485,7 @@ html .container .bio .dev-box .info-text {
 }
 @media (max-width: 1000px) {
   html .container .bio .dev-box .info-text h2 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 html .container .bio .dev-box .info-text h3,
