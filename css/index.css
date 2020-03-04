@@ -185,6 +185,11 @@ nav .nav-container .navlinks a {
   color: white;
   transition: all 50ms linear;
 }
+@media (max-width: 500px) {
+  nav .nav-container .navlinks a {
+    font-size: 1.5rem;
+  }
+}
 nav .nav-container .navlinks a:hover {
   color: lightgrey;
 }
@@ -197,6 +202,12 @@ nav .nav-container .navlinks a .signup-button {
   font-size: 2rem;
   transition: all 50ms linear;
 }
+@media (max-width: 500px) {
+  nav .nav-container .navlinks a .signup-button {
+    font-size: 1.5rem;
+    padding: 7.5px 15px 7.5px 15px;
+  }
+}
 nav .nav-container .navlinks a .signup-button:hover {
   background-color: rgba(0, 0, 0, 0);
   border: 2px solid #d7e8fd;
@@ -206,7 +217,7 @@ nav .nav-container .navlinks a .signup-button:hover {
 @media (max-width: 500px), (max-width: 800px) {
   nav .nav-container .navlinks {
     width: 80%;
-    padding-right: 25px;
+    padding-right: 0px;
   }
 }
 html {

@@ -43,13 +43,15 @@ nav {
         justify-content: space-between;
         align-items: center;
         padding: 10px;
-        // padding-right: 100px;
         a {
           font-family: @navfont-family;
           font-size: 2rem;
           text-decoration: none;
           color: @navfont-color;
           transition: all 50ms linear;
+          @media @mobile{
+            font-size: 1.5rem;
+          }
           &:hover {
             color: @hover-color;
           }
@@ -61,6 +63,10 @@ nav {
             color: @navfont-color;
             font-size: 2rem;
             transition: all 50ms linear;
+            @media @mobile{
+              font-size: 1.5rem;
+              padding: 7.5px 15px 7.5px 15px;
+            }
             &:hover {
               background-color: rgba(0, 0, 0, 0);
               border: 2px solid #d7e8fd;
@@ -73,7 +79,7 @@ nav {
       @media @mobile, @tablet {
         .navlinks {
           width: 80%;
-          padding-right: 25px;
+          padding-right: 0px;
         }
       }
     }
