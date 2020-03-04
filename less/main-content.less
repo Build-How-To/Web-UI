@@ -1,22 +1,27 @@
+// main pages
 html{
     font-size: 62.5%;
     background-image: url(../img/crafts-img.jpg);
     background-size: cover;
     background-position:top;
+    background-attachment: fixed;
     h1, h2, h3, p{
-        color:@Headerfont-color;
         font-family: @font-family;
+        color: @contextfont-color;
     }
     h1 {
         font-size: @h1size;
+        color: @contextfont-color;
     }
 
     h2 {
+        color: @contextfont-color;
         font-size: @h2size;
         font-weight: bold;
     }
 
     h3 {
+        color: @contextfont-color;
         font-size: @h3size;
     }
     @media @mobile{
@@ -69,6 +74,10 @@ html{
                         padding-top: 10px;
                         padding-bottom: 10px;
                     }
+                }
+                h2{
+                    color: @headerfont-color;
+                    font-weight: bold;
                 }
                 @media @mobile, @tablet{
                     padding: 20px;

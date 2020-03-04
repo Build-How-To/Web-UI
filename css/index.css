@@ -225,22 +225,26 @@ html {
   background-image: url(../img/crafts-img.jpg);
   background-size: cover;
   background-position: top;
+  background-attachment: fixed;
 }
 html h1,
 html h2,
 html h3,
 html p {
-  color: white;
   font-family: 'Montserrat';
+  color: white;
 }
 html h1 {
   font-size: 8rem;
+  color: white;
 }
 html h2 {
+  color: white;
   font-size: 6rem;
   font-weight: bold;
 }
 html h3 {
+  color: white;
   font-size: 3.5rem;
 }
 @media (max-width: 500px) {
@@ -310,6 +314,10 @@ html .container .introduction .container-intro .catcher-info {
     padding-bottom: 10px;
   }
 }
+html .container .introduction .container-intro h2 {
+  color: #96c4fa;
+  font-weight: bold;
+}
 @media (max-width: 500px), (max-width: 800px) {
   html .container .introduction .container-intro {
     padding: 20px;
@@ -319,7 +327,7 @@ html .container .introduction .container-intro .catcher-info {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  border-top: 5px solid #76b2f8;
+  border-top: 5px solid #358df5;
   padding-top: 50px;
 }
 @media (max-width: 800px) {
@@ -466,7 +474,7 @@ html .container .bio .dev-box {
 }
 html .container .bio .dev-box .profile-img-container {
   width: 25%;
-  border: 8px solid #76b2f8;
+  border: 8px solid #358df5;
   padding: 16px;
 }
 html .container .bio .dev-box .profile-img-container img {
