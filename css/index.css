@@ -257,11 +257,6 @@ html p {
     font-size: 1.5rem;
   }
 }
-@media (max-width: 1165px) {
-  html p {
-    font-size: 1.5rem;
-  }
-}
 @media (max-width: 500px) {
   html h1 {
     font-size: 4rem;
@@ -342,27 +337,43 @@ html p {
   }
 }
 .introduction .container-intro .catcher-info .para-wrap {
-  width: 55%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   line-height: 40px;
   justify-content: space-between;
 }
-@media (max-width: 800px) {
+@media (max-width: 1055px) {
   .introduction .container-intro .catcher-info .para-wrap {
-    padding-bottom: 20px;
+    line-height: normal;
+    width: 45%;
+  }
+  .introduction .container-intro .catcher-info .para-wrap p {
+    font-size: 2.5rem;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 965px) {
+  .introduction .container-intro .catcher-info .para-wrap p {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 1210px) {
   .introduction .container-intro .catcher-info .para-wrap {
-    width: 95%;
+    width: 50%;
     line-height: normal;
+  }
+  .introduction .container-intro .catcher-info .para-wrap .signup-line {
+    display: none;
   }
 }
 @media (max-width: 500px), (max-width: 800px) {
   .introduction .container-intro .catcher-info .para-wrap {
     width: 100%;
     line-height: normal;
+    padding-bottom: 20px;
+  }
+  .introduction .container-intro .catcher-info .para-wrap .signup-line {
+    display: block;
   }
 }
 .introduction .container-intro .catcher-info .para-wrap a {
@@ -399,7 +410,7 @@ html p {
   color: white;
 }
 .introduction .container-intro .catcher-info .img-container {
-  width: 38%;
+  width: 45%;
   border: 10px solid white;
   padding: 20px;
 }
@@ -410,12 +421,7 @@ html p {
 }
 @media (max-width: 1220px) {
   .introduction .container-intro .catcher-info .img-container {
-    width: 50%;
-  }
-}
-@media (max-width: 1000px) {
-  .introduction .container-intro .catcher-info .img-container {
-    width: 95%;
+    width: 47%;
   }
 }
 @media (max-width: 500px), (max-width: 800px) {
